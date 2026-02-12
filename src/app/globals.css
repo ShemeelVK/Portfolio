@@ -71,9 +71,9 @@
   right: 0;
   background: linear-gradient(to bottom, rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
   background-size: 100% 4px;
-  z-index: 9999;
+  z-index: 45; /* Below HUD */
   pointer-events: none;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .vignette::after {
@@ -84,9 +84,9 @@
   left: 0;
   bottom: 0;
   right: 0;
-  /* Softer vignette: starts later (70%) and max opacity is lower (0.8) */
-  background: radial-gradient(circle, rgba(0,0,0,0) 70%, rgba(0,0,0,0.8) 120%);
-  z-index: 9998;
+  /* Softer vignette: starts later (70%) and max opacity is lower (0.5) */
+  background: radial-gradient(circle, rgba(0,0,0,0) 65%, rgba(0,0,0,0.5) 120%);
+  z-index: 40; /* Lower z-index so HUD (z-50) is on top */
   pointer-events: none;
 }
 

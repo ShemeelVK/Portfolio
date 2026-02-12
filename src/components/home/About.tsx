@@ -13,7 +13,7 @@ export default function AboutSection({ user }: { user: ExtendedUser | null }) {
   ]
 
   return (
-    <section id="about" className="py-20 w-full relative overflow-hidden">
+    <section id="about" className="py-28 w-full relative overflow-hidden">
       
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-cyan-900/10 to-transparent pointer-events-none"></div>
@@ -24,8 +24,8 @@ export default function AboutSection({ user }: { user: ExtendedUser | null }) {
         {/* Section Title */}
         <div className="flex items-center gap-4 mb-16">
           <div className="w-12 h-[2px] bg-cyan-500"></div>
-          <h2 className="text-3xl md:text-5xl font-bold font-orbitron text-white drop-shadow-[0_0_10px_rgba(0,243,255,0.3)]">
-            <GlitchText text="Target Analysis // ABOUT" />
+          <h2 className="text-3xl md:text-5xl font-bold font-orbitron drop-shadow-[0_0_10px_rgba(0,243,255,0.2)]">
+            <GlitchText text="Target Analysis // ABOUT" className="text-white" />
           </h2>
         </div>
 

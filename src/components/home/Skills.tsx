@@ -62,12 +62,12 @@ const skillCategories = [
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="py-20 w-full relative overflow-hidden min-h-screen">
+    <section id="skills" className="py-28 w-full relative overflow-hidden min-h-screen">
       
       <div className="container px-4 md:px-6 mx-auto relative z-10">
         <div className="mb-16 text-center">
-            <h2 className="text-3xl md:text-5xl font-bold font-orbitron text-white drop-shadow-[0_0_10px_rgba(0,243,255,0.3)] mb-4">
-              <GlitchText text="TECHNICAL ARSENAL" />
+            <h2 className="text-3xl md:text-5xl font-bold font-orbitron drop-shadow-[0_0_10px_rgba(0,243,255,0.2)] mb-4">
+              <GlitchText text="TECHNICAL ARSENAL" className="text-white" />
             </h2>
             <div className="h-1 w-24 bg-cyan-500 mx-auto shadow-[0_0_10px_cyan]"></div>
         </div>

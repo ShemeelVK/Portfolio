@@ -29,15 +29,15 @@ export default function HudLayout({ children }: { children: React.ReactNode }) {
     <div className="relative w-full min-h-screen overflow-hidden scanlines vignette font-orbitron text-cyan-500">
       
       {/* Top Left Status */}
-      <div className="fixed top-4 left-4 z-50 flex flex-col gap-1 pointer-events-none mix-blend-difference">
-        <div className="text-xs tracking-[0.2em] opacity-80">SYS.ONLINE</div>
-        <div className="text-lg font-bold">{time}</div>
+      <div className="fixed top-4 left-4 z-50 flex flex-col gap-1 pointer-events-none mix-blend-difference opacity-50 hover:opacity-100 transition-opacity">
+        <div className="text-[10px] tracking-[0.2em] opacity-80">SYS.ONLINE</div>
+        <div className="text-sm font-bold">{time}</div>
       </div>
 
       {/* Top Right Coordinates */}
-      <div className="fixed top-4 right-4 z-50 text-right pointer-events-none mix-blend-difference">
-        <div className="text-xs tracking-[0.2em] opacity-80">COORDINATES</div>
-        <div className="text-sm font-mono">
+      <div className="fixed top-4 right-4 z-50 text-right pointer-events-none mix-blend-difference opacity-50 hover:opacity-100 transition-opacity">
+        <div className="text-[10px] tracking-[0.2em] opacity-80">COORDINATES</div>
+        <div className="text-xs font-mono">
           X: {mousePos.x.toString().padStart(4, '0')} <br/> 
           Y: {mousePos.y.toString().padStart(4, '0')}
         </div>

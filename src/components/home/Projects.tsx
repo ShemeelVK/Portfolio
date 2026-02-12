@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Github, ExternalLink, Code2 } from 'lucide-react'
 import type { Project, Tag } from '@prisma/client'
+import GlitchText from '@/components/sci-fi/GlitchText'
 import TypewriterText from '@/components/ui/TypewriterText'
 import ScrollStack, { ScrollStackItem } from '@/components/ui/ScrollStack'
 import { motion } from 'framer-motion'
@@ -12,7 +13,7 @@ type ProjectWithTags = Project & { tags: Tag[] }
 
 export default function ProjectsSection({ projects }: { projects: ProjectWithTags[] }) {
   return (
-    <section id="projects" className="py-20 w-full relative min-h-screen">
+    <section id="projects" className="py-28 w-full relative">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
@@ -28,10 +29,9 @@ export default function ProjectsSection({ projects }: { projects: ProjectWithTag
           viewport={{ once: true }}
           className="flex flex-col items-center justify-center text-center space-y-4"
         >
-          <TypewriterText
-            text="Featured Projects"
-            className="text-4xl font-bold tracking-tighter md:text-5xl font-heading text-transparent bg-clip-text bg-gradient-to-r from-primary via-purple-500 to-secondary font-orbitron"
-          />
+          <h2 className="text-4xl md:text-5xl font-bold font-orbitron drop-shadow-[0_0_10px_rgba(0,243,255,0.2)]">
+             <GlitchText text="Featured Projects" className="text-white" />
+          </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-transparent via-primary to-transparent rounded-full shadow-neon-cyan"></div>
           <p className="max-w-[600px] text-gray-400 mt-4 md:text-lg">
             Cutting-edge applications pushing the boundaries of web technology
@@ -40,7 +40,7 @@ export default function ProjectsSection({ projects }: { projects: ProjectWithTag
       </div>
 
       {/* Scroll Stack Container - Standard Document Flow */}
-      <div className="max-w-5xl mx-auto px-4 pb-40">
+      <div className="max-w-5xl mx-auto px-4 pb-20">
         <ScrollStack>
           {projects.map((project, index) => (
             <ScrollStackItem key={project.id} index={index}>

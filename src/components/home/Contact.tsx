@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { Mail, Send, User, MessageSquare } from 'lucide-react'
 import { toast } from 'sonner'
 import * as yup from 'yup'
+import GlitchText from '@/components/sci-fi/GlitchText'
 import TypewriterText from '@/components/ui/TypewriterText'
 
 const contactSchema = yup.object({
@@ -65,7 +66,7 @@ export default function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-20 w-full min-h-screen relative overflow-hidden flex items-center justify-center">
+    <section id="contact" className="py-28 w-full min-h-screen relative overflow-hidden flex items-center justify-center">
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none" />
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-primary/20 rounded-full blur-3xl" />
@@ -79,10 +80,9 @@ export default function ContactSection() {
           viewport={{ once: true }}
           className="flex flex-col items-center justify-center text-center space-y-4 mb-16"
         >
-          <TypewriterText
-            text="Get In Touch"
-            className="text-4xl font-bold tracking-tighter md:text-5xl font-heading text-transparent bg-clip-text bg-gradient-to-r from-primary via-purple-500 to-secondary"
-          />
+          <h2 className="text-4xl md:text-5xl font-bold font-orbitron drop-shadow-[0_0_10px_rgba(0,243,255,0.2)]">
+             <GlitchText text="Get In Touch" className="text-white" />
+          </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-transparent via-primary to-transparent rounded-full shadow-neon-cyan"></div>
           <p className="max-w-[600px] text-gray-400 mt-4 md:text-lg">
             Have a project in mind or just want to say hi? I&apos;d love to hear from you.

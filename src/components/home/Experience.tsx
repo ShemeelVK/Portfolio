@@ -10,7 +10,7 @@ export default function ExperienceSection({ experiences }: { experiences: Experi
   const formatDate = (date: Date) => format(new Date(date), 'MMM yyyy')
 
   return (
-    <section id="experience" className="py-20 w-full relative overflow-hidden min-h-screen">
+    <section id="experience" className="py-28 w-full relative overflow-hidden min-h-screen">
        
        {/* Circuit Board Background Pattern */}
        <div 
@@ -31,8 +31,8 @@ export default function ExperienceSection({ experiences }: { experiences: Experi
             </span>
             SYSTEM LOGS
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold font-orbitron text-white drop-shadow-[0_0_10px_rgba(0,243,255,0.3)]">
-            <GlitchText text="Experience Timeline" />
+          <h2 className="text-3xl md:text-5xl font-bold font-orbitron drop-shadow-[0_0_10px_rgba(0,243,255,0.2)]">
+            <GlitchText text="Experience Timeline" className="text-white" />
           </h2>
         </div>
 
