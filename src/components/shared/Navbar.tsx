@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 
 const navItems = [
-  { name: '/ HOME', path: '/' },
+  { name: '/ HOME', path: '#hero' },
   { name: '/ ABOUT', path: '#about' },
   { name: '/ DATA', path: '#projects' }, /* Projects renamed to DATA for sci-fi feel */
   { name: '/ LOGS', path: '#experience' }, /* Experience renamed to LOGS */

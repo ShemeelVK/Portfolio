@@ -35,7 +35,7 @@ export default async function Home() {
       <Navbar />
       <Hero user={user as ExtendedUser | null} />
       <AboutSection user={user as ExtendedUser | null} />
-      <SkillsSection />
+      <SkillsSection skills={skills} />
       <ExperienceSection experiences={experience} />
       <Projects projects={projects} />
       <ContactSection />

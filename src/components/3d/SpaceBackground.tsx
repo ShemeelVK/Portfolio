@@ -5,7 +5,7 @@ import { Stars, Sparkles, Cloud } from '@react-three/drei'
 import { useRef } from 'react'
 
 function RotatingStars() {
-  const ref = useRef<any>()
+  const ref = useRef<any>(null)
   useFrame((state, delta) => {
     if (ref.current) {
         ref.current.rotation.x -= delta / 10
@@ -23,7 +23,7 @@ function RotatingStars() {
 
 export default function SpaceBackground() {
   return (
-    <div className="absolute inset-0 z-0">
+    <div className="absolute inset-0 z-0 bg-black">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <RotatingStars />
         <ambientLight intensity={0.1} />

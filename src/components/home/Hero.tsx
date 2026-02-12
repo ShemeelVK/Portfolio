@@ -3,7 +3,8 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react'
+import { ArrowRight, Github, Linkedin, Mail, FileText } from 'lucide-react'
+import { FaWhatsapp } from 'react-icons/fa'
 import { ExtendedUser } from '@/types'
 import GlitchText from '@/components/sci-fi/GlitchText'
 
@@ -11,7 +12,7 @@ import SpaceBackground from '@/components/3d/SpaceBackground'
 
 export default function Hero({ user }: { user: ExtendedUser | null }) {
   return (
-    <section className="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden pt-20 md:pt-24">
+    <section id="hero" className="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden pt-20 md:pt-24">
       
       {/* 3D Space Background */}
       <SpaceBackground />
@@ -92,6 +93,17 @@ export default function Hero({ user }: { user: ExtendedUser | null }) {
             </Link>
 
             <Link
+              href="/resume.pdf"
+              target="_blank"
+              download
+              className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-none border border-cyan-500/50 bg-cyan-900/10 px-8 font-medium text-cyan-400 transition-all duration-300 hover:bg-cyan-500/20 hover:text-cyan-300 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2"
+            >
+              <FileText className="mr-2 h-4 w-4" />
+              <span>ACCESS DATA LOGS (CV)</span>
+              <div className="absolute inset-0 -z-10 bg-cyan-400/10 translate-y-full transition-transform group-hover:translate-y-0"></div>
+            </Link>
+
+            <Link
               href="#contact"
               className="inline-flex h-12 items-center justify-center rounded-none border border-gray-700 bg-black/50 px-8 text-sm font-medium text-gray-300 backdrop-blur-sm transition-colors hover:border-purple-500 hover:text-purple-400"
             >
@@ -105,6 +117,9 @@ export default function Hero({ user }: { user: ExtendedUser | null }) {
                 <Icon className="w-6 h-6" />
               </a>
             ))}
+             <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-green-400 transition-colors transform hover:scale-110 flex items-center justify-center">
+                <FaWhatsapp className="w-6 h-6" />
+             </a>
           </div>
         </div>
       </div>
