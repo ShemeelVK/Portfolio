@@ -1,0 +1,120 @@
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\app\(admin)\admin\(dashboard)\layout.tsx[24m[0m
+[0m  [2m17:10[22m  [33mwarning[39m  'motion' is defined but never used           [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m17:18[22m  [33mwarning[39m  'AnimatePresence' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\app\(admin)\admin\(dashboard)\page.tsx[24m[0m
+[0m  [2m23:63[22m  [31merror[39m  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  [2mreact/no-unescaped-entities[22m[0m
+[0m  [2m62:88[22m  [31merror[39m  Unexpected any. Specify a different type                         [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\app\(admin)\admin\login\page.tsx[24m[0m
+[0m  [2m33:14[22m  [33mwarning[39m  'error' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\app\api\experience\[id]\route.ts[24m[0m
+[0m  [2m43:12[22m  [33mwarning[39m  'error' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m61:12[22m  [33mwarning[39m  'error' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\app\api\experience\route.ts[24m[0m
+[0m  [2m22:12[22m  [33mwarning[39m  'error' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m52:12[22m  [33mwarning[39m  'error' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\app\api\projects\[id]\route.ts[24m[0m
+[0m  [2m55:12[22m  [33mwarning[39m  'error' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m73:12[22m  [33mwarning[39m  'error' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\app\api\projects\route.ts[24m[0m
+[0m  [2m25:12[22m  [33mwarning[39m  'error' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\app\api\skills\[id]\route.ts[24m[0m
+[0m  [2m33:12[22m  [33mwarning[39m  'error' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m51:12[22m  [33mwarning[39m  'error' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\app\api\skills\route.ts[24m[0m
+[0m  [2m18:12[22m  [33mwarning[39m  'error' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m42:12[22m  [33mwarning[39m  'error' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\app\layout.tsx[24m[0m
+[0m  [2m5:8[22m  [33mwarning[39m  'clsx' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\components\3d\ThreeBackground.tsx[24m[0m
+[0m   [2m7:23[22m  [31merror[39m  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m   [2m8:22[22m  [31merror[39m  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m15:38[22m  [31merror[39m  Error: Cannot call impure function during render[0m
+[0m[0m
+[0m`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).[0m
+[0m[0m
+[0mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\components\3d\ThreeBackground.tsx:15:38[0m
+[0m  13 |     const points = new Float32Array(count * 3);[0m
+[0m  14 |     for(let i=0; i<count; i++) {[0m
+[0m> 15 |         const r = radius * Math.cbrt(Math.random());[0m
+[0m     |                                      ^^^^^^^^^^^^^ Cannot call impure function[0m
+[0m  16 |         const theta = Math.random() * 2 * Math.PI;[0m
+[0m  17 |         const phi = Math.acos(2 * Math.random() - 1);[0m
+[0m  18 |         points[i*3] = r * Math.sin(phi) * Math.cos(theta);                      [2mreact-hooks/purity[22m[0m
+[0m  [2m16:23[22m  [31merror[39m  Error: Cannot call impure function during render[0m
+[0m[0m
+[0m`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).[0m
+[0m[0m
+[0mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\components\3d\ThreeBackground.tsx:16:23[0m
+[0m  14 |     for(let i=0; i<count; i++) {[0m
+[0m  15 |         const r = radius * Math.cbrt(Math.random());[0m
+[0m> 16 |         const theta = Math.random() * 2 * Math.PI;[0m
+[0m     |                       ^^^^^^^^^^^^^ Cannot call impure function[0m
+[0m  17 |         const phi = Math.acos(2 * Math.random() - 1);[0m
+[0m  18 |         points[i*3] = r * Math.sin(phi) * Math.cos(theta);[0m
+[0m  19 |         points[i*3+1] = r * Math.sin(phi) * Math.sin(theta);                        [2mreact-hooks/purity[22m[0m
+[0m  [2m17:35[22m  [31merror[39m  Error: Cannot call impure function during render[0m
+[0m[0m
+[0m`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).[0m
+[0m[0m
+[0mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\components\3d\ThreeBackground.tsx:17:35[0m
+[0m  15 |         const r = radius * Math.cbrt(Math.random());[0m
+[0m  16 |         const theta = Math.random() * 2 * Math.PI;[0m
+[0m> 17 |         const phi = Math.acos(2 * Math.random() - 1);[0m
+[0m     |                                   ^^^^^^^^^^^^^ Cannot call impure function[0m
+[0m  18 |         points[i*3] = r * Math.sin(phi) * Math.cos(theta);[0m
+[0m  19 |         points[i*3+1] = r * Math.sin(phi) * Math.sin(theta);[0m
+[0m  20 |         points[i*3+2] = r * Math.cos(phi);  [2mreact-hooks/purity[22m[0m
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\components\admin\ExperienceForm.tsx[24m[0m
+[0m  [2m33:42[22m  [33mwarning[39m  'setValue' is assigned a value but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m72:14[22m  [33mwarning[39m  'error' is defined but never used              [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\components\admin\ExperienceList.tsx[24m[0m
+[0m  [2m27:14[22m  [33mwarning[39m  'error' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\components\admin\ProfileForm.tsx[24m[0m
+[0m  [2m54:14[22m  [33mwarning[39m  'error' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\components\admin\ProjectForm.tsx[24m[0m
+[0m  [2m78:21[22m  [31merror[39m  Unexpected any. Specify a different type  [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\components\admin\ProjectList.tsx[24m[0m
+[0m   [2m4:30[22m  [33mwarning[39m  'ExternalLink' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m   [2m4:44[22m  [33mwarning[39m  'Github' is defined but never used        [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m30:14[22m  [33mwarning[39m  'error' is defined but never used         [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\components\admin\SkillsManager.tsx[24m[0m
+[0m  [2m34:14[22m  [33mwarning[39m  'error' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m51:14[22m  [33mwarning[39m  'error' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\components\home\About.tsx[24m[0m
+[0m   [2m5:8[22m   [33mwarning[39m  'Image' is defined but never used                                [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m  [2m50:30[22m  [31merror[39m    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  [2mreact/no-unescaped-entities[22m[0m
+[0m  [2m65:81[22m  [33mwarning[39m  'idx' is defined but never used                                  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\components\home\Contact.tsx[24m[0m
+[0m  [2m65:61[22m  [31merror[39m  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  [2mreact/no-unescaped-entities[22m[0m
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\components\home\Experience.tsx[24m[0m
+[0m  [2m4:28[22m  [33mwarning[39m  'Briefcase' is defined but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\components\home\Hero.tsx[24m[0m
+[0m   [2m7:48[22m  [31merror[39m  Unexpected any. Specify a different type                         [2m@typescript-eslint/no-explicit-any[22m[0m
+[0m  [2m38:20[22m  [31merror[39m  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  [2mreact/no-unescaped-entities[22m[0m
+[0m[0m
+[0m[4mC:\Users\shame\.gemini\antigravity\playground\velvet-equinox\src\components\shared\Navbar.tsx[24m[0m
+[0m  [2m19:9[22m  [33mwarning[39m  'pathname' is assigned a value but never used  [2m@typescript-eslint/no-unused-vars[22m[0m
+[0m[0m
+[0m[31m[1m✖ 40 problems (12 errors, 28 warnings)[22m[39m[0m
+[0m[31m[1m[22m[39m[0m

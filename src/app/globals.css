@@ -1,26 +1,107 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer theme {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    /* Define other variables as needed or keep them in base */
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* 
+   Tailwind v4 CSS-First Setup 
+   Refactoring to use standard CSS for base tokens to avoid "unknown utility" errors 
+*/
+
+:root {
+  /* Sci-Fi Colors (HSL values for manual usage if needed, or full colors) */
+  --color-cyan: #00f3ff;
+  --color-purple: #bc13fe;
+  
+  --background: #0a0a10; /* Deep Space Black */
+  --foreground: #00f3ff; /* Cyan Text */
+  
+  --border-color: #00f3ff;
+}
+
+@layer base {
+  *, ::before, ::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: var(--border-color);
+  }
+
+  /* Default border width for elements that typically have borders */
+  /* But Tailwind resets usually handle this. We just set the COLOR default. */
+  
+  html {
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--font-outfit, ui-sans-serif, system-ui, sans-serif);
+    line-height: 1.5;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    overflow-x: hidden;
+    background-image: radial-gradient(circle at 50% 50%, #111827 0%, #05050a 100%);
+    cursor: none;
+  }
+}
+
+/* Sci-Fi Utilities */
+.font-orbitron {
+  font-family: var(--font-orbitron), sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.font-rajdhani {
+  font-family: var(--font-outfit), sans-serif;
+}
+
+.scanlines::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+  background-size: 100% 4px;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.vignette::after {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* Softer vignette: starts later (70%) and max opacity is lower (0.8) */
+  background: radial-gradient(circle, rgba(0,0,0,0) 70%, rgba(0,0,0,0.8) 120%);
+  z-index: 9998;
+  pointer-events: none;
+}
+
+.holo-glass {
+  background: rgba(10, 20, 30, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 243, 255, 0.2);
+  box-shadow: 0 0 15px rgba(0, 243, 255, 0.1);
+}
+
+.holo-glass:hover {
+  border-color: rgba(0, 243, 255, 0.6);
+  box-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
+}
+
+.clip-angle {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
 }
