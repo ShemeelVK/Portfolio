@@ -7,8 +7,15 @@ import 'lenis/dist/lenis.css'
 export default function SmoothScroll() {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.2,
+      // TWEAK HERE for "Smoothness" vs "Snappiness"
+      // duration: 1.2 - 1.5 is "Luxurious/Heavy" (Awwwards style)
+      // duration: 0.8 - 1.0 is "Standard/Responsive"
+      duration: 1.7, 
+
+      // Easing controls the curve of the stop.
+      // Current: Exponential ease-out (starts fast, stops gently)
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      
       orientation: 'vertical',
       gestureOrientation: 'vertical',
       smoothWheel: true,

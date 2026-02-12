@@ -14,9 +14,9 @@ function RotatingStars() {
   })
   return (
     <group ref={ref}>
-      <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
-      <Sparkles count={200} scale={12} size={2} speed={0.4} opacity={0.5} color="#00f3ff" />
-      <Sparkles count={100} scale={15} size={3} speed={0.3} opacity={0.3} color="#bc13fe" />
+      <Stars radius={100} depth={50} count={6000} factor={4} saturation={0} fade speed={1} />
+      <Sparkles count={300} scale={12} size={2} speed={0.4} opacity={0.5} color="#00f3ff" />
+      <Sparkles count={150} scale={15} size={3} speed={0.3} opacity={0.3} color="#bc13fe" />
     </group>
   )
 }
@@ -24,7 +24,7 @@ function RotatingStars() {
 export default function SpaceBackground() {
   return (
     <div className="absolute inset-0 z-0 bg-black">
-      <Canvas camera={{ position: [0, 0, 1] }}>
+      <Canvas camera={{ position: [0, 0, 1] }} dpr={[1, 2]} performance={{ min: 0.5 }}>
         <RotatingStars />
         <ambientLight intensity={0.1} />
       </Canvas>

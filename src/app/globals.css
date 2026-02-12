@@ -53,7 +53,12 @@
       radial-gradient(circle at center, #0a0a12 0%, #000000 100%);
     background-size: 40px 40px, 40px 40px, 100% 100%;
     background-attachment: fixed;
-    cursor: none;
+    /* cursor: none; Handled by * selector below to ensure override */
+  }
+
+  /* Force hide default cursor everywhere to allow custom cursor to shine */
+  *, *::before, *::after {
+    cursor: none !important;
   }
 }
 
