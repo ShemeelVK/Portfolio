@@ -42,8 +42,8 @@ export default function Navbar() {
             href="/" 
             className="text-xl font-bold tracking-widest hover:opacity-80 transition-opacity z-10 font-orbitron"
           >
-            <span className="text-cyan-500">DEV</span>
-            <span className="text-white">PORTFOLIO</span>
+            <span className="text-white">SHEMEEL</span>
+            <span className="text-cyan-500">.DEV</span>
             <span className="text-purple-500 animate-pulse">_</span>
           </Link>
 

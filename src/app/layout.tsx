@@ -16,25 +16,45 @@ const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit' })
 const orbitron = Orbitron({ subsets: ['latin'], variable: '--font-orbitron' })
 
 export const metadata: Metadata = {
-  title: 'Alex Sterling | Full-Stack Engineer & 3D Web Specialist',
-  description: 'Visionary Full-Stack Engineer specializing in immersive 3D web experiences and next-gen interfaces. Expert in React, Next.js, Three.js, and modern web technologies.',
-  keywords: ['Full-Stack Developer', 'Web Developer', '3D Web', 'Three.js', 'React', 'Next.js', 'Portfolio'],
-  authors: [{ name: 'Alex Sterling' }],
-  creator: 'Alex Sterling',
-  publisher: 'Alex Sterling',
+  title: 'Shemeel Sakeer | Full Stack .NET Engineer',
+  description: 'Portfolio of Shemeel Sakeer, a Full Stack Developer specializing in .NET Core, C#, React, and modern web architecture. Building scalable Web APIs and high-performance web applications.',
+  keywords: ['Full Stack Developer', '.NET Core', 'C#', 'ASP.NET', 'Web API', 'React', 'Next.js', 'TypeScript', 'SQL Server', 'Microservices', 'Clean Architecture', 'Kerala', 'India'],
+  authors: [{ name: 'Shemeel Sakeer' }],
+  creator: 'Shemeel Sakeer',
+  publisher: 'Shemeel Sakeer',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://yourportfolio.com',
-    title: 'Alex Sterling | Full-Stack Engineer & 3D Web Specialist',
-    description: 'Visionary Full-Stack Engineer specializing in immersive 3D web experiences and next-gen interfaces.',
-    siteName: 'Alex Sterling Portfolio',
+    url: 'https://shemeel-portfolio.vercel.app', 
+    title: 'Shemeel Sakeer | Full Stack .NET Engineer',
+    description: 'Specializing in .NET Core, React, and building scalable enterprise-grade web applications.',
+    siteName: 'Shemeel Sakeer Portfolio',
+    images: [
+      {
+        url: '/og-image.jpg', 
+        width: 1200,
+        height: 630,
+        alt: 'Shemeel Sakeer Portfolio',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Alex Sterling | Full-Stack Engineer',
-    description: 'Visionary Full-Stack Engineer specializing in immersive 3D web experiences.',
-    creator: '@alexsterling',
+    title: 'Shemeel Sakeer | Full Stack .NET Engineer',
+    description: 'Building scalable web solutions with .NET Core and React.',
+    creator: '@ShemeelVK', 
+    images: ['/og-image.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 }
 

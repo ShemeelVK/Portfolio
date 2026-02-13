@@ -61,7 +61,7 @@ export default function Hero({ user }: { user: ExtendedUser | null }) {
             </div>
             
             <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 px-4 py-1 bg-black/80 border border-cyan-500/50 text-cyan-400 text-xs font-mono tracking-widest uppercase rounded whitespace-nowrap">
-                Full Stack Operator
+                Full Stack Engineer
             </div>
           </motion.div>
           
@@ -72,8 +72,8 @@ export default function Hero({ user }: { user: ExtendedUser | null }) {
             </h1>
  
             <p className="mx-auto max-w-[700px] text-gray-400 md:text-xl font-rajdhani tracking-wide border-l-2 border-cyan-500/50 pl-4 text-left md:text-center md:border-l-0 md:pl-0">
-               Architecting <span className="text-cyan-400">digital realities</span> and immersive web experiences. 
-               Specializing in Three.js, React ecosystem, and next-gen interfaces.
+               Engineering robust <span className="text-cyan-400">scalable solutions</span> with .NET Core and React. 
+               Specializing in clean architecture, secure APIs, and high-performance web applications.
             </p>
           </div>
 
@@ -93,7 +93,7 @@ export default function Hero({ user }: { user: ExtendedUser | null }) {
             </Link>
 
             <Link
-              href="/resume.pdf"
+              href="/Shemeel%20Resume%20(.NET%20Full%20Stack%20Developer).pdf"
               target="_blank"
               download
               className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-none border border-cyan-500/50 bg-cyan-900/10 px-8 font-medium text-cyan-400 transition-all duration-300 hover:bg-cyan-500/20 hover:text-cyan-300 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2"
@@ -112,12 +112,16 @@ export default function Hero({ user }: { user: ExtendedUser | null }) {
           </motion.div>
 
           <div className="w-full flex justify-center gap-8 mt-6">
-            {[Github, Linkedin, Mail].map((Icon, i) => (
-              <a key={i} href="#" className="text-gray-500 hover:text-cyan-400 transition-colors transform hover:scale-110 flex items-center justify-center">
-                <Icon className="w-6 h-6" />
-              </a>
-            ))}
-             <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-green-400 transition-colors transform hover:scale-110 flex items-center justify-center">
+            <a href="https://github.com/ShemeelVK" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-cyan-400 transition-colors transform hover:scale-110 flex items-center justify-center">
+              <Github className="w-6 h-6" />
+            </a>
+            <a href="https://www.linkedin.com/in/shemeel-sakeer" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-cyan-400 transition-colors transform hover:scale-110 flex items-center justify-center">
+              <Linkedin className="w-6 h-6" />
+            </a>
+            <a href="mailto:shameelvk95@gmail.com" className="text-gray-500 hover:text-cyan-400 transition-colors transform hover:scale-110 flex items-center justify-center">
+              <Mail className="w-6 h-6" />
+            </a>
+             <a href="https://wa.me/919605621681" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-green-400 transition-colors transform hover:scale-110 flex items-center justify-center">
                 <FaWhatsapp className="w-6 h-6" />
              </a>
           </div>

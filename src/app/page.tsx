@@ -6,9 +6,10 @@ import Projects from "@/components/home/Projects"
 import ExperienceSection from "@/components/home/Experience"
 import ContactSection from "@/components/home/Contact"
 import SkillsSection from "@/components/home/Skills"
+import Footer from "../components/shared/Footer"
 import prisma from "@/lib/prisma"
 
-export const revalidate = 0; // Disable static caching for now, or use ISR
+export const revalidate = 0;
 
 export default async function Home() {
   // Fetch data in parallel
@@ -30,15 +31,26 @@ export default async function Home() {
     })
   ])
 
+  // Cast to ExtendedUser to bypass stale Prisma Client types (due to file lock)
+  const userData = user as unknown as ExtendedUser
+  
+  const extendedUser = userData ? {
+    ...userData,
+    bio: userData.bio || '',
+    headline: userData.headline || '',
+    avatarUrl: userData.avatarUrl || ''
+  } : null
+
   return (
-    <div className="flex flex-col min-h-screen">
+    <main className="relative min-h-screen snap-container">
       <Navbar />
-      <Hero user={user as ExtendedUser | null} />
-      <AboutSection user={user as ExtendedUser | null} />
-      <SkillsSection skills={skills} />
-      <ExperienceSection experiences={experience} />
+      <Hero user={extendedUser} />
+      <AboutSection user={extendedUser} />
       <Projects projects={projects} />
-      <ContactSection />
-    </div>
+      <ExperienceSection experiences={experience} />
+      <SkillsSection skills={skills} />
+      <ContactSection user={extendedUser} />
+      <Footer />
+    </main>
   )
 }

@@ -1,12 +1,13 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Mail, Send, User, MessageSquare } from 'lucide-react'
 import { toast } from 'sonner'
 import * as yup from 'yup'
 import GlitchText from '@/components/sci-fi/GlitchText'
 import TypewriterText from '@/components/ui/TypewriterText'
+import { ExtendedUser } from '@/types'
 
 const contactSchema = yup.object({
   name: yup.string().required('Name is required').min(2, 'Name must be at least 2 characters'),
@@ -14,7 +15,7 @@ const contactSchema = yup.object({
   message: yup.string().required('Message is required').min(10, 'Message must be at least 10 characters'),
 })
 
-export default function ContactSection() {
+export default function ContactSection({ user }: { user?: ExtendedUser | null }) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,6 +23,16 @@ export default function ContactSection() {
   })
   const [errors, setErrors] = useState<Record<string, string>>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
+
+  useEffect(() => {
+    if (user) {
+      setFormData(prev => ({
+        ...prev,
+        name: user.name || '',
+        email: user.email || ''
+      }))
+    }
+  }, [user])
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target

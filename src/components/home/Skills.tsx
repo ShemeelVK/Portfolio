@@ -3,26 +3,32 @@
 import { motion } from 'framer-motion'
 import { 
   SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, 
-  SiPostgresql, SiPrisma, SiGraphql, SiDocker, SiGit, SiFigma, 
+  SiKubernetes, SiAmazon, SiGooglecloud, SiJenkins, SiTerraform, SiAnsible, 
+  SiCircleci, SiGraphql, SiJira, SiTrello, SiSlack, SiDiscord,
+  SiPostgresql, SiPrisma, SiDocker, SiGit, SiFigma, 
   SiPython, SiMongodb, SiRedis, SiDotnet, SiJavascript, SiHtml5, SiCss3
 } from 'react-icons/si'
-import { TbBrandThreejs, TbApi } from 'react-icons/tb'
-import { VscCode } from 'react-icons/vsc'
+import { TbBrandThreejs, TbApi, TbServerCog, TbLayoutList, TbCloudComputing } from 'react-icons/tb'
+import { VscCode, VscAzure } from 'react-icons/vsc'
 import GlitchText from '@/components/sci-fi/GlitchText'
 import { Skill } from '@prisma/client'
 
 // Mapping for specific styling of known skills
 const skillMetadata: Record<string, { icon: any, color: string }> = {
+  // Languages
   'C#': { icon: SiDotnet, color: '#239120' },
   'JavaScript': { icon: SiJavascript, color: '#F7DF1E' },
   'TypeScript': { icon: SiTypescript, color: '#3178C6' },
   'Python': { icon: SiPython, color: '#3776AB' },
   'HTML5': { icon: SiHtml5, color: '#E34F26' },
   'CSS3': { icon: SiCss3, color: '#1572B6' },
+  // Frontend
   'React': { icon: SiReact, color: '#61DAFB' },
   'Next.js': { icon: SiNextdotjs, color: '#FFFFFF' },
   'Tailwind CSS': { icon: SiTailwindcss, color: '#06B6D4' },
   'Three.js': { icon: TbBrandThreejs, color: '#FFFFFF' },
+  'Figma': { icon: SiFigma, color: '#F24E1E' },
+  // Backend & DB
   '.NET Core': { icon: SiDotnet, color: '#512BD4' },
   'Node.js': { icon: SiNodedotjs, color: '#339933' },
   'Web API': { icon: TbApi, color: '#FFFFFF' },
@@ -30,10 +36,29 @@ const skillMetadata: Record<string, { icon: any, color: string }> = {
   'Prisma': { icon: SiPrisma, color: '#2D3748' },
   'MongoDB': { icon: SiMongodb, color: '#47A248' },
   'Redis': { icon: SiRedis, color: '#DC382D' },
+  // DevOps & Cloud
   'Docker': { icon: SiDocker, color: '#2496ED' },
+  'Kubernetes': { icon: SiKubernetes, color: '#326CE5' },
+  'AWS': { icon: SiAmazon, color: '#FF9900' },
+  'Azure': { icon: VscAzure, color: '#007FFF' },
+  'GCP': { icon: SiGooglecloud, color: '#4285F4' },
+  'Jenkins': { icon: SiJenkins, color: '#D24939' },
+  'Terraform': { icon: SiTerraform, color: '#7B42BC' },
+  'Ansible': { icon: SiAnsible, color: '#EE0000' },
+  'CI/CD': { icon: SiCircleci, color: '#343434' },
+  // Architecture
+  'Microservices': { icon: TbServerCog, color: '#00cc00' },
+  'Clean Architecture': { icon: TbLayoutList, color: '#00afef' },
+  'System Design': { icon: TbLayoutList, color: '#ff00ff' },
+  'REST API': { icon: TbApi, color: '#ffffff' },
+  'GraphQL': { icon: SiGraphql, color: '#E10098' },
+  'Serverless': { icon: TbCloudComputing, color: '#FF9900' },
+  // Tools
   'Git': { icon: SiGit, color: '#F05032' },
   'VS Code': { icon: VscCode, color: '#007ACC' },
-  'Figma': { icon: SiFigma, color: '#F24E1E' },
+  'Jira': { icon: SiJira, color: '#0052CC' },
+  'Trello': { icon: SiTrello, color: '#0079BF' },
+  'Slack': { icon: SiSlack, color: '#4A154B' },
 }
 
 export default function SkillsSection({ skills = [] }: { skills?: Skill[] }) {
@@ -46,8 +71,8 @@ export default function SkillsSection({ skills = [] }: { skills?: Skill[] }) {
     return acc
   }, {} as Record<string, Skill[]>)
 
-  // Define category order (optional, to keep layout consistent)
-  const categoryOrder = ['Languages', 'Frontend', 'Backend', 'Database', 'DevOps & Tools', 'Other']
+  // Define category order
+  const categoryOrder = ['Languages', 'Frontend', 'Backend', 'Architecture', 'DevOps', 'Tools', 'Other']
   
   // Sort categories based on predefined order, then others
   const sortedCategories = Object.keys(groupedSkills).sort((a, b) => {

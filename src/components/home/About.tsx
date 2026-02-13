@@ -6,9 +6,8 @@ import GlitchText from '@/components/sci-fi/GlitchText'
 
 export default function AboutSection({ user }: { user: ExtendedUser | null }) {
   const stats = [
-    { label: 'YEARS EXPERIENCE', value: '5+' },
-    { label: 'PROJECTS COMPLETED', value: '42' },
-    { label: 'HAPPY CLIENTS', value: '30+' },
+    { label: 'YEARS EXPERIENCE', value: '1+' },
+    { label: 'PROJECTS COMPLETED', value: '10+' },
     { label: 'TECHNOLOGIES', value: '15+' },
   ]
 
@@ -54,18 +53,25 @@ export default function AboutSection({ user }: { user: ExtendedUser | null }) {
                     {user.bio}
                   </p>
                 ) : (
-                  <p className="text-lg md:text-xl text-gray-300 leading-relaxed font-rajdhani">
-                    I'm a visionary developer bridging the gap between data and design. 
-                    Specializing in creating immersive digital experiences that push the boundaries of the web.
-                  </p>
+                  <div className="text-lg md:text-xl text-gray-300 leading-relaxed font-rajdhani space-y-4">
+                     <p>
+                        Hello! I am <span className="text-cyan-400 font-bold">Shemeel Sakeer</span>, a Full Stack .NET Developer with hands-on experience building production-level web applications.
+                     </p>
+                     <p>
+                        I specialize in using <span className="text-cyan-300">C#, .NET Core, ASP.NET MVC, and Web API</span> to design scalable backend systems and robust RESTful APIs. On the frontend, I build responsive interfaces using <span className="text-purple-400">React, HTML, CSS, and JavaScript</span>.
+                     </p>
+                     <p>
+                        My expertise extends to <span className="text-green-400">SQL Server</span> database design, performance optimization, and secure authentication systems. I have a solid understanding of OOP, design patterns, and <span className="text-cyan-300">Clean Architecture</span> with exposure to Agile/Scrum.
+                     </p>
+                  </div>
                 )}
 
                 <div className="mt-8 pt-8 border-t border-cyan-500/20">
-                   <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                   <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
                       {stats.map((stat, i) => (
                         <div key={i} className="flex flex-col gap-1">
                            <span className="text-3xl font-bold font-orbitron text-white">{stat.value}</span>
-                           <span className="text-[10px] tracking-widest text-cyan-500/70 font-mono uppercase">{stat.label}</span>
+                           <span className="text-xs tracking-widest text-cyan-500/70 font-mono uppercase">{stat.label}</span>
                         </div>
                       ))}
                    </div>

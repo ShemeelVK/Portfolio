@@ -36,7 +36,7 @@ export default function SmoothScroll() {
         e.preventDefault()
         const href = anchor.getAttribute('href')
         if (href && href !== '#') {
-           lenis.scrollTo(href, { offset: -80 }) // Offset for fixed header
+           lenis.scrollTo(href, { offset: -100 }) // Increased offset for safe landing
         }
       })
     })

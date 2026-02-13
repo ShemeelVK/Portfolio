@@ -60,6 +60,18 @@
   *, *::before, *::after {
     cursor: none !important;
   }
+
+  /* Snap Sections - scoped to landing page */
+  .snap-container {
+    /* Removed fixed height/overflow to allow Body/Lenis scroll */
+    width: 100%;
+    position: relative;
+  }
+
+  .snap-container section {
+    /* scroll-snap-align: start; Disabled snapping to fix alignment issues */
+    scroll-margin-top: 100px;
+  }
 }
 
 /* Sci-Fi Utilities */

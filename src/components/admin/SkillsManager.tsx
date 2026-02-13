@@ -83,6 +83,8 @@ export default function SkillsManager({ initialSkills }: { initialSkills: Skill[
             >
                 <option value="Frontend">Frontend</option>
                 <option value="Backend">Backend</option>
+                <option value="Architecture">Architecture</option>
+                <option value="DevOps">DevOps</option>
                 <option value="Database">Database</option>
                 <option value="Tools">Tools</option>
                 <option value="Design">Design</option>
