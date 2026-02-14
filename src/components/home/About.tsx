@@ -7,8 +7,8 @@ import GlitchText from '@/components/sci-fi/GlitchText'
 export default function AboutSection({ user }: { user: ExtendedUser | null }) {
   const stats = [
     { label: 'YEARS EXPERIENCE', value: '1+' },
-    { label: 'PROJECTS COMPLETED', value: '10+' },
-    { label: 'TECHNOLOGIES', value: '15+' },
+    { label: 'PROJECTS COMPLETED', value: '3+' },
+    { label: 'TECHNOLOGIES', value: '10+' },
   ]
 
   return (

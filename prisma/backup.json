@@ -1,0 +1,294 @@
+{
+  "users": [
+    {
+      "id": "cmlj2621y00003lxotltbtzer",
+      "name": "Shemeel Sakeer",
+      "email": "shameelvk95@gmail.com",
+      "password": "$2b$10$D2VjMDE1kRRT4DowhZg4xuR9jA4orQ4bQiKZ1/N7GE00N.3rqUipW",
+      "bio": "Self-taught Full Stack .NET Developer skilled in C#, ASP.NET Core, Web API, SQL Server, HTML, CSS, JavaScript, and React.js with experience building scalable, responsive web applications using Clean Architecture, Object-Oriented Design and RESTful services. Strong in backend development, API integration, database design, debugging, troubleshooting with exposure to Agile/Scrum methodologies.",
+      "headline": ".NET Full Stack Developer",
+      "avatarUrl": "/myself.png",
+      "createdAt": "2026-02-12T06:08:58.342Z",
+      "updatedAt": "2026-02-13T16:01:42.901Z"
+    }
+  ],
+  "experiences": [
+    {
+      "id": "cmljsh2kt0001if81qjzm8vds",
+      "role": "Full Stack .NET Developer Intern",
+      "company": "Bridgeon Solutions",
+      "location": "Kerala, India",
+      "startDate": "2025-06-01T00:00:00.000Z",
+      "endDate": null,
+      "description": "Developed and maintained multiple backend modules including authentication, product management, and order processing within a full-stack .NET application. Tested and validated application features across multiple user workflows to ensure stable functionality and error-free execution. Implemented and maintained REST API endpoints for core application features including user management, cart operations, and order handling.",
+      "current": true,
+      "order": 0,
+      "createdAt": "2026-02-12T18:25:22.253Z",
+      "updatedAt": "2026-02-12T18:25:22.253Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "cmljsh2l30002if81lug66mwf",
+      "title": "Elevé Studio",
+      "description": "Developed a full-stack E-commerce web application using C#, ASP.NET Core, Web API, Entity Framework Core, SQL Server, and React.js following Clean Architecture principles. Implemented secure authentication and authorization using JWT Bearer. Developed 40+ REST API endpoints. Integrated Razorpay payment gateway.",
+      "imageUrl": "/eleve-studio-cover.png",
+      "demoUrl": "#",
+      "githubUrl": "#",
+      "featured": true,
+      "order": 1,
+      "createdAt": "2026-02-12T18:25:22.263Z",
+      "updatedAt": "2026-02-13T17:39:03.540Z",
+      "tags": [
+        {
+          "id": "cmljsdzff0003wj5e831j10el",
+          "name": "C#",
+          "createdAt": "2026-02-12T18:22:58.203Z",
+          "updatedAt": "2026-02-12T18:22:58.203Z"
+        },
+        {
+          "id": "cmljsdzff0004wj5e53527tko",
+          "name": "ASP.NET Core",
+          "createdAt": "2026-02-12T18:22:58.203Z",
+          "updatedAt": "2026-02-12T18:22:58.203Z"
+        },
+        {
+          "id": "cmljsdzff0005wj5ek2ygbyd4",
+          "name": "React.js",
+          "createdAt": "2026-02-12T18:22:58.203Z",
+          "updatedAt": "2026-02-12T18:22:58.203Z"
+        },
+        {
+          "id": "cmljsdzff0006wj5eu6agtenb",
+          "name": "SQL Server",
+          "createdAt": "2026-02-12T18:22:58.203Z",
+          "updatedAt": "2026-02-12T18:22:58.203Z"
+        },
+        {
+          "id": "cmljsdzff0007wj5exp8fkc66",
+          "name": "Clean Architecture",
+          "createdAt": "2026-02-12T18:22:58.203Z",
+          "updatedAt": "2026-02-12T18:22:58.203Z"
+        }
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "cmljv4jp600004h0c8x7ndewu",
+      "name": "C#",
+      "category": "Languages",
+      "icon": "🔹",
+      "order": 1,
+      "createdAt": "2026-02-12T19:39:36.762Z",
+      "updatedAt": "2026-02-12T19:39:36.762Z"
+    },
+    {
+      "id": "cmljv4jpo00014h0cat1tdb75",
+      "name": "JavaScript",
+      "category": "Languages",
+      "icon": "🔹",
+      "order": 2,
+      "createdAt": "2026-02-12T19:39:36.781Z",
+      "updatedAt": "2026-02-12T19:39:36.781Z"
+    },
+    {
+      "id": "cmljv4jq300034h0ch0v44y2d",
+      "name": "Python",
+      "category": "Languages",
+      "icon": "🔹",
+      "order": 4,
+      "createdAt": "2026-02-12T19:39:36.796Z",
+      "updatedAt": "2026-02-12T19:39:36.796Z"
+    },
+    {
+      "id": "cmljv4jq900044h0cjsbwqf04",
+      "name": "HTML5",
+      "category": "Languages",
+      "icon": "🔹",
+      "order": 5,
+      "createdAt": "2026-02-12T19:39:36.801Z",
+      "updatedAt": "2026-02-12T19:39:36.801Z"
+    },
+    {
+      "id": "cmljv4jqf00054h0c4axx6xz9",
+      "name": "CSS3",
+      "category": "Languages",
+      "icon": "🔹",
+      "order": 6,
+      "createdAt": "2026-02-12T19:39:36.807Z",
+      "updatedAt": "2026-02-12T19:39:36.807Z"
+    },
+    {
+      "id": "cmljv4jqj00064h0chsbplf9p",
+      "name": "React",
+      "category": "Frontend",
+      "icon": "🔹",
+      "order": 7,
+      "createdAt": "2026-02-12T19:39:36.812Z",
+      "updatedAt": "2026-02-12T19:39:36.812Z"
+    },
+    {
+      "id": "cmljv4jqv00084h0c8lyow6ol",
+      "name": "Tailwind CSS",
+      "category": "Frontend",
+      "icon": "🔹",
+      "order": 9,
+      "createdAt": "2026-02-12T19:39:36.823Z",
+      "updatedAt": "2026-02-12T19:39:36.823Z"
+    },
+    {
+      "id": "cmljv4jra000b4h0c5s4jmx4j",
+      "name": ".NET Core",
+      "category": "Backend",
+      "icon": "🔹",
+      "order": 12,
+      "createdAt": "2026-02-12T19:39:36.839Z",
+      "updatedAt": "2026-02-12T19:39:36.839Z"
+    },
+    {
+      "id": "cmljv4jrl000d4h0co9gcwf2g",
+      "name": "Web API",
+      "category": "Backend",
+      "icon": "🔹",
+      "order": 14,
+      "createdAt": "2026-02-12T19:39:36.849Z",
+      "updatedAt": "2026-02-12T19:39:36.849Z"
+    },
+    {
+      "id": "cmljv4jrq000e4h0c6jgs8ebw",
+      "name": "SQL Server",
+      "category": "Database",
+      "icon": "🔹",
+      "order": 15,
+      "createdAt": "2026-02-12T19:39:36.854Z",
+      "updatedAt": "2026-02-12T19:39:36.854Z"
+    },
+    {
+      "id": "cmljv4js6000h4h0c89kywlvt",
+      "name": "Redis",
+      "category": "Database",
+      "icon": "🔹",
+      "order": 18,
+      "createdAt": "2026-02-12T19:39:36.871Z",
+      "updatedAt": "2026-02-12T19:39:36.871Z"
+    },
+    {
+      "id": "cmljv4jsc000i4h0cr7xix8jr",
+      "name": "Docker",
+      "category": "DevOps & Tools",
+      "icon": "🔹",
+      "order": 19,
+      "createdAt": "2026-02-12T19:39:36.876Z",
+      "updatedAt": "2026-02-12T19:39:36.876Z"
+    },
+    {
+      "id": "cmljv4jsi000j4h0c2ny7r0cs",
+      "name": "Git",
+      "category": "DevOps & Tools",
+      "icon": "🔹",
+      "order": 20,
+      "createdAt": "2026-02-12T19:39:36.882Z",
+      "updatedAt": "2026-02-12T19:39:36.882Z"
+    },
+    {
+      "id": "cmljv4jso000k4h0chp05o4hd",
+      "name": "VS Code",
+      "category": "DevOps & Tools",
+      "icon": "🔹",
+      "order": 21,
+      "createdAt": "2026-02-12T19:39:36.888Z",
+      "updatedAt": "2026-02-12T19:39:36.888Z"
+    },
+    {
+      "id": "cmljv4jst000l4h0cqqkk6w26",
+      "name": "Figma",
+      "category": "DevOps & Tools",
+      "icon": "🔹",
+      "order": 22,
+      "createdAt": "2026-02-12T19:39:36.893Z",
+      "updatedAt": "2026-02-12T19:39:36.893Z"
+    },
+    {
+      "id": "cmll2l4420000uhyb4yadro39",
+      "name": "PostgreSQL",
+      "category": "Database",
+      "icon": "",
+      "order": 0,
+      "createdAt": "2026-02-13T15:56:13.202Z",
+      "updatedAt": "2026-02-13T15:56:13.202Z"
+    },
+    {
+      "id": "cmll2m5ms0001uhyb8fq9ju30",
+      "name": "Redux",
+      "category": "Frontend",
+      "icon": "",
+      "order": 0,
+      "createdAt": "2026-02-13T15:57:01.828Z",
+      "updatedAt": "2026-02-13T15:57:01.828Z"
+    },
+    {
+      "id": "cmll2mpl20002uhyb0dwlm3ef",
+      "name": "Bootstrap",
+      "category": "Frontend",
+      "icon": "",
+      "order": 0,
+      "createdAt": "2026-02-13T15:57:27.687Z",
+      "updatedAt": "2026-02-13T15:57:27.687Z"
+    },
+    {
+      "id": "cmll2n9ie0003uhyb91vghho6",
+      "name": "JWT",
+      "category": "Backend",
+      "icon": "",
+      "order": 0,
+      "createdAt": "2026-02-13T15:57:53.510Z",
+      "updatedAt": "2026-02-13T15:57:53.510Z"
+    },
+    {
+      "id": "cmll2nhne0004uhybvnmexrm3",
+      "name": "SMTP",
+      "category": "Backend",
+      "icon": "",
+      "order": 0,
+      "createdAt": "2026-02-13T15:58:04.059Z",
+      "updatedAt": "2026-02-13T15:58:04.059Z"
+    },
+    {
+      "id": "cmll2oaym0005uhybdxue1qvh",
+      "name": "Entity framework",
+      "category": "Database",
+      "icon": "",
+      "order": 0,
+      "createdAt": "2026-02-13T15:58:42.047Z",
+      "updatedAt": "2026-02-13T15:58:42.047Z"
+    },
+    {
+      "id": "cmll2oiej0006uhybe4n0i84c",
+      "name": "Dapper",
+      "category": "Backend",
+      "icon": "",
+      "order": 0,
+      "createdAt": "2026-02-13T15:58:51.692Z",
+      "updatedAt": "2026-02-13T15:58:51.692Z"
+    },
+    {
+      "id": "cmll3tle30000vqnqa2nhzqlh",
+      "name": "Microservices",
+      "category": "Architecture",
+      "icon": "TbServerCog",
+      "order": 1,
+      "createdAt": "2026-02-13T16:30:48.459Z",
+      "updatedAt": "2026-02-13T16:30:48.459Z"
+    },
+    {
+      "id": "cmll3tleh0001vqnqad1t5xy5",
+      "name": "Clean Architecture",
+      "category": "Architecture",
+      "icon": "TbLayoutList",
+      "order": 2,
+      "createdAt": "2026-02-13T16:30:48.474Z",
+      "updatedAt": "2026-02-13T16:30:48.474Z"
+    }
+  ]
+}

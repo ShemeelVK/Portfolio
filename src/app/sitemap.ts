@@ -1,33 +1,36 @@
 import { MetadataRoute } from 'next'
  
+// CHANGE THIS TO YOUR DEPLOYED DOMAIN
+const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://shemeel-portfolio.vercel.app'
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://yourportfolio.com',
+      url: baseUrl,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
-      url: 'https://yourportfolio.com/#about',
+      url: `${baseUrl}/#about`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://yourportfolio.com/#experience',
+      url: `${baseUrl}/#experience`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://yourportfolio.com/#projects',
+      url: `${baseUrl}/#projects`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
-      url: 'https://yourportfolio.com/#contact',
+      url: `${baseUrl}/#contact`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.7,

@@ -58,6 +58,8 @@ export const metadata: Metadata = {
   },
 }
 
+import JsonLd from '@/components/seo/JsonLd'
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -66,6 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={clsx(inter.variable, outfit.variable, orbitron.variable, "antialiased selection:bg-cyan-500/30 selection:text-cyan-100 bg-background text-foreground overflow-x-hidden")}>
+        <JsonLd />
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} forcedTheme="dark">
           <HudLayout>
             <Preloader />
