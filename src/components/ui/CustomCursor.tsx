@@ -111,7 +111,7 @@ export default function CustomCursor() {
       scale: 1.1,
       borderColor: '#00ffff',
       transition: {
-        type: "spring",
+        type: "spring" as const,
         mass: 0.6
       }
     },
