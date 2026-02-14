@@ -12,7 +12,7 @@ export default function Footer() {
     { name: 'GitHub', href: 'https://github.com/ShemeelVK', icon: SiGithub },
     { name: 'LinkedIn', href: 'https://www.linkedin.com/in/shemeel-sakeer', icon: SiLinkedin },
     { name: 'WhatsApp', href: 'https://wa.me/919605621681', icon: SiWhatsapp },
-    { name: 'Instagram', href: 'https://instagram.com/shemeel_vk', icon: SiInstagram },
+    { name: 'Instagram', href: 'https://instagram.com/shameel___vk', icon: SiInstagram },
   ]
 
   return (

@@ -1,4 +1,4 @@
-import { Person, WithContext } from 'schema-dts'
+import type { Person, WithContext } from 'schema-dts'
 
 export default function JsonLd() {
   const jsonLd: WithContext<Person> = {
@@ -10,8 +10,8 @@ export default function JsonLd() {
     sameAs: [
       'https://github.com/ShemeelVK',
       'https://www.linkedin.com/in/shemeel-sakeer',
-      'https://twitter.com/ShemeelVK', // Add correctly if known
-      'https://instagram.com/shemeel'  // Add correctly if known, removing placeholders
+      'https://x.com/shameel___vk', // Add correctly if known
+      'https://instagram.com/shameel___vk'  // Add correctly if known, removing placeholders
     ],
     jobTitle: 'Full Stack .NET Engineer',
     description: 'Specializing in .NET Core, React, and building scalable enterprise-grade web applications.',
