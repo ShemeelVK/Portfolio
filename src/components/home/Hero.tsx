@@ -93,7 +93,7 @@ export default function Hero({ user }: { user: ExtendedUser | null }) {
             </Link>
 
             <Link
-              href="/Shemeel%20Resume%20(.NET%20Full%20Stack%20Developer).pdf"
+              href="/Shemeel%20Resume%20(Software%20Engineer%20-%20C%23%20%26%20React).pdf"
               target="_blank"
               download
               className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-none border border-cyan-500/50 bg-cyan-900/10 px-8 font-medium text-cyan-400 transition-all duration-300 hover:bg-cyan-500/20 hover:text-cyan-300 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2"
