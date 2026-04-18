@@ -8,6 +8,10 @@
   }
 }
 
+html {
+  font-size: 13px; /* Default is 16px. Changing this scales down all rem-based sizes */
+}
+
 /* 
    Tailwind v4 CSS-First Setup 
    Refactoring to use standard CSS for base tokens to avoid "unknown utility" errors 

@@ -93,7 +93,7 @@ export default function ScrollStack({ children }: ScrollStackProps) {
         Sticky elements do exactly that!
         When Card 2 hits the sticking point, it covers Card 1.
       */}
-      <div className="space-y-32 pb-40">
+      <div className="space-y-32 pb-10">
         {children}
       </div>
     </div>

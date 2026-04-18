@@ -13,7 +13,7 @@ type ProjectWithTags = Project & { tags: Tag[] }
 
 export default function ProjectsSection({ projects }: { projects: ProjectWithTags[] }) {
   return (
-    <section id="projects" className="py-28 w-full relative">
+    <section id="projects" className="pt-28 pb-0 px-0 w-full relative">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
@@ -40,7 +40,7 @@ export default function ProjectsSection({ projects }: { projects: ProjectWithTag
       </div>
 
       {/* Scroll Stack Container - Standard Document Flow */}
-      <div className="max-w-5xl mx-auto px-4 pb-20">
+      <div className="max-w-5xl mx-auto px-4 pb-0">
         <ScrollStack>
           {projects.map((project, index) => (
             <ScrollStackItem key={project.id} index={index}>
