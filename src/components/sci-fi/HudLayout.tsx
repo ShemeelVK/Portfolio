@@ -43,19 +43,7 @@ export default function HudLayout({ children }: { children: React.ReactNode }) {
         </div>
       </div>
 
-      {/* Bottom Left System Data */}
-      <div className="fixed bottom-4 left-4 z-50 pointer-events-none mix-blend-difference">
-        <div className="flex gap-2 text-[10px] tracking-widest opacity-60">
-          <span>CPU: 34%</span>
-          <span>MEM: 12GB</span>
-          <span>NET: SECURE</span>
-        </div>
-      </div>
 
-      {/* Bottom Right Version */}
-      <div className="fixed bottom-4 right-4 z-50 pointer-events-none mix-blend-difference">
-        <div className="text-xs tracking-[0.2em]">VER 2.5.0</div>
-      </div>
 
       {/* Decorative Lines */}
       <div className="fixed top-0 left-1/2 -translate-x-1/2 w-1/3 h-[1px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent z-50 opacity-50"></div>
